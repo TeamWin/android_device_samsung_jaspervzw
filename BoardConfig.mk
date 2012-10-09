@@ -27,8 +27,8 @@
 TARGET_OTA_ASSERT_DEVICE := jaspervzw
 
 # Kernel
-#TARGET_KERNEL_SOURCE        := kernel/samsung/jaspervzw
-#TARGET_KERNEL_CONFIG        := cyanogen_jaspervzw_defconfig
+TARGET_KERNEL_SOURCE        := kernel/samsung/jaspervzw
+TARGET_KERNEL_CONFIG        := cyanogen_jaspervzw_defconfig
 BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom user_debug=31 zcache
 BOARD_KERNEL_BASE           := 0x80200000
 BOARD_FORCE_RAMDISK_ADDRESS := 0x81500000
