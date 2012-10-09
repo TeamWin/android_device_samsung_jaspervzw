@@ -77,3 +77,9 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
 USE_CAMERA_STUB := true
+
+# Enable kexec support
+
+ifeq ($(USE_KEXEC),1)
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/jaspervzw/kexec-releasetools/ota_from_target_files
+endif
