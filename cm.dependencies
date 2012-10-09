@@ -1,0 +1,11 @@
+[
+  {
+    "repository": "android_device_samsung_msm8960-common",
+    "target_path": "device/samsung/msm8960-common"
+  },
+  {
+    "repository": "android_kernel_samsung_jaspervzw",
+    "target_path": "kernel/samsung/jaspervzw"
+  }
+]
+
