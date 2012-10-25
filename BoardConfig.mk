@@ -27,8 +27,9 @@
 TARGET_OTA_ASSERT_DEVICE := jaspervzw
 
 # Kernel
-TARGET_KERNEL_SOURCE        := kernel/samsung/jaspervzw
-TARGET_KERNEL_CONFIG        := cyanogen_jaspervzw_defconfig
+#TARGET_KERNEL_SOURCE        := kernel/samsung/jaspervzw
+#TARGET_KERNEL_CONFIG        := cyanogen_jaspervzw_defconfig
+TARGET_PREBUILT_KERNEL      := device/samsung/jaspervzw/kernel
 BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom user_debug=31 zcache
 BOARD_KERNEL_BASE           := 0x80200000
 BOARD_FORCE_RAMDISK_ADDRESS := 0x81500000
@@ -76,6 +77,9 @@ TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_DEFAULT_EXTERNAL_STORAGE := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true
+
 USE_CAMERA_STUB := true
 
 # Enable kexec support
